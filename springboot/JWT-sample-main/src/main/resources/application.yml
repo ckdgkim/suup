@@ -1,0 +1,32 @@
+spring:
+  application:
+    name=spring-security-jwt-test:
+  jwt:
+    secret: daf66e01593f61a15b857cf433aae03a005812b31234e149036bcc8dee755dbb
+#    header: Authorization
+#    expiration-seconds: 86400
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_jwt3
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none   # docker compose up 새로하면 create 여야 함
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  docker:
+    compose:
+      lifecycle-management: start-and-stop
+      start:
+        command: up
+      stop:
+        command:  down
+        timeout:  1m
+
+server:
+  port: 8080

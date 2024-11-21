@@ -1,0 +1,67 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>    <meta charset="UTF-8">-->
+<!--    <title>게시판 글 목록</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <table>-->
+<!--        <tr>-->
+<!--            <th>글번호</th>-->
+<!--            <th>제목</th>-->
+<!--            <th>좋아요</th>-->
+<!--        </tr>-->
+<!--        <tr th:each="post , postStat: ${allPosts}">-->
+
+<!--            <td>-->
+<!--                <a th:href="@{/posts/{postId}(postId=${post.postId})}" th:text="${post.getPostId()}"> postId </a>-->
+<!--                <form th:action="@{/post/delete/{postId}(postId=${post.postId})" method="post">-->
+<!--                    <input type="submit">-->
+<!--                </form>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <a th:href="@{/posts/{postId}(postId=${post.postId})}" th:text="${post.getTitle()}"> title </a>-->
+<!--                <button th:onclick="|location.href='@{/posts/delete/{postId}(postId=${post.postId})}'|"></button>-->
+<!--            </td>-->
+<!--            <td th:text="${postStat.count}"></td>-->
+<!--            <td>${stat.count}</td>-->
+<!--            <td th:text="${post.getPostId()}"></td>-->
+<!--            <td th:text="${post.getTitle()}"></td>-->
+<!--            <td th:text="${post.getLikes()}"></td>-->
+<!--        </tr>-->
+<!--    </table>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판 글 목록</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>글번호</th>
+        <th>제목</th>
+        <th>좋아요</th>
+        <th>삭제</th>
+    </tr>
+    <tr th:each="post, postStat : ${allPosts}">
+        <td>
+            <!-- 글 번호 링크 -->
+            <a th:href="@{/posts/{postId}(postId=${post.postId})}" th:text="${post.postId}">postId</a>
+        </td>
+        <td>
+            <!-- 글 제목 링크 -->
+            <a th:href="@{/posts/{postId}(postId=${post.postId})}" th:text="${post.title}">title</a>
+        </td>
+        <td th:text="${post.likes}"></td> <!-- 좋아요 수 -->
+        <td>
+            <!-- 삭제 버튼 -->
+            <form th:action="@{/posts/delete/{postId}(postId=${post.postId})}" method="post">
+                <input type="submit" value="삭제">
+            </form>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

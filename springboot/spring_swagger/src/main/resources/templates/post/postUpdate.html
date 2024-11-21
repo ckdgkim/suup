@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>    <meta charset="UTF-8">
+    <title>게시판 글 수정</title>
+</head>
+<body>
+    <h1>게시판 글 수정</h1>
+
+    <form th:action="@{/posts/update/{postId}(postId=${post.postId})}" method="post" th:object="${post}">
+        <input type="text" th:field="*{postId}">
+        <label for="title">글 제목</label>
+        <input type="text" th:field="*{title}">
+        <label for="body">글 내용</label>
+        <input type="text" th:field="*{body}">
+        <textarea id="body" name="body" th:text="${post.body}"></textarea>
+        <input type="text" name="userId" th:value="${post.userId}" hidden>
+        <input type="submit" value="글수정">
+    </form>
+    <button th:onclick="|location.href='@{/posts/{postId}(postId=${post.postId})}'|">상세보기</button>
+    <button th:onclick="|location.href='@{/posts}'|">목록으로</button>
+</body>
+</html>
