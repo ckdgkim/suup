@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bef3f593-186a-4db3-9668-3ccb7908ec01" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/objectpackage/pocketping" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/objectpackage/pocketping/src/CreateUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/objectpackage/pocketping/src/DBDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/objectpackage/pocketping/src/user.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/SimpleServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/miniproject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advancedJava2/DBDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/advancedJava2/DBDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advancedJava2/DBDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/advancedJava2/DBDemo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advancedJava2/DBDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/advancedJava2/DBDemo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advancedJava2/DBDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/advancedJava2/DBDemo3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advancedJava2/DBDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/advancedJava2/DBDemo4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objectpackage/pocketping/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/objectpackage/pocketping/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2lvDG2pY7glbxNNcJG9RnXMzd0y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/JavaWork/javaex/src"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bef3f593-186a-4db3-9668-3ccb7908ec01" name="Changes" comment="" />
+      <created>1726051556633</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726051556633</updated>
+    </task>
+    <servers />
+  </component>
+</project>
