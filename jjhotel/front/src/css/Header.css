@@ -1,0 +1,70 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  padding: 20px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0); 
+  z-index: 10;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 1); 
+  border-bottom: 1px solid #ccc;
+}
+
+.navbarMenu {
+  margin: 10px 20px;
+  font-size: 18px;
+}
+
+.navbarMenu:hover {
+  color: #afd3e2;
+  text-decoration: underline;
+}
+
+.reservationMenu .navbarMenu {
+  text-decoration: none;
+}
+
+.navbarFirstLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbarFirstLine img {
+  margin: 0px 8px;
+}
+
+.navbarSecondLine {
+  display: flex;
+  justify-content: space-around;
+}
+
+.reservationMenu {
+  position: relative;
+  display: flex;  
+  justify-content: center;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  display: flex;
+  white-space: nowrap;  
+ }
+
+.dropdown a {
+  padding: 0px 10px;
+}
+
+.dropdown a:hover {
+  color: #afd3e2;
+  text-decoration: underline;
+}

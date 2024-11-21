@@ -1,0 +1,48 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family:'Unbounded', "Noto Sans KR";
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 200 900;
+  src: url(https://fonts.gstatic.com/s/unbounded/v8/Yq6W-LOTXCb04q32xlpwu8Zf.woff2) format('woff2');
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+#root {
+  /* max-width: 1280px; */
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background-color: #f6f1f1;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*footer 하단에 고정하기 위한 wrapper flex 설정*/
+.contentWrapper {
+  flex: 1;
+}
+
+a {
+  text-decoration: none; 
+  color: #000;
+}
+
+a:visited {
+  text-decoration: none;  
+}
+
+a:hover {
+  color: #000; 
+  text-decoration: none; 
+}

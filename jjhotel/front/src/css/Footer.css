@@ -1,0 +1,15 @@
+.footer {
+  margin-top: auto;
+  background-color: #146c94;
+  color: #f6f1f1;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  margin: 0px 8px;
+}
