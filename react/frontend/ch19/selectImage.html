@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>m,n 
+  <select name="pic" id="picture" onchange="changeImage()">
+    <option value="images/p1.jfif" selected>사진1</option>
+    <option value="images/p2.jpg">사진2</option>
+    <option value="images/p3.png">사진3</option>
+  </select>
+  <img id="img" src="images/p1.jfif" alt="강아지 사진">
+  <script>
+    function changeImage() {
+      let select = document.getElementById("picture");
+      let img = document.getElementById("img");
+      img.src=select.options[select.selectedIndex].value;
+      console.log(select.options[select.selectedIndex].value);
+    }
+  </script>
+</body>
+</html>

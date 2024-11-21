@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="aaa.html">
+    입력<input type="text" name="query">
+    <input type="submit" value="제출" onclick="prevent(event)">
+    <button type="submit" onclick="prevent(event)">버튼</button>
+  </form>  
+
+  <button onclick="show(event)">버튼</button>
+
+  <script>
+    function show(e) {
+      console.log(e.type + "," + e.target + "," + e.defaultPrevented + "," +
+        e.currentTarget);
+    }
+    function prevent(e) {
+      console.log(e.type);
+      console.log(e.target);
+      e.preventDefault();
+    }
+  </script>
+</body>
+</html>

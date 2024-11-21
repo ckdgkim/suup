@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let account = new Object();
+    account.name = "홍길동";
+    account.number = "1111";
+    account.balance = 10000;
+
+    let account2 = {
+      name : "아이유",
+      number : "2222",
+      balance : 20000,
+      withdraw : function (money) {
+          if (money <= 20000) {
+            this.balance -= money;
+          }
+          return money;
+      }
+    }
+
+    function Account(name, number,balance) {
+      this.name = name;
+      this.number = number;
+      this.balance = balance;
+      this.withdraw = money => {
+          if (money <= 20000) {
+            this.balance -= money;
+          }
+          return money;
+      }
+    }
+
+    let account3 = new Account("Hong kil dong", "3333", 30000);
+
+        
+    alert(`${account.name} 의 계좌 ${account.number} 의 잔고는 ${account.balance} 입니다. `);
+    document.write(`${account2.name} 의 계좌 ${account2["number"]} 의 잔고는 ${account2["balance"]} 입니다. `);
+    console.log(account2.withdraw(10000) + "원을 인출함");
+    console.log(account2.balance + " 잔액");
+
+    document.write(`${account3.name} 의 계좌 ${account3.number} 의 잔고는 ${account3.balance} 입니다. `);
+  </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    var secondP, thirdP; 
+    function init() {
+      secondP = document.querySelector("#secondP");
+      secondP.onmouseover = over;
+      secondP.onmouseout = out;
+
+      thirdP = document.querySelector("#thirdP");
+      thirdP.addEventListener("mouseover", over);
+      thirdP.addEventListener("mouseout", out);
+    }
+  </script>
+</head>
+<body onload="init()">
+  <p id="firstP" 
+    onmouseover="this.style.color='red'"
+    onmouseout="this.style.color='black'"
+  >마우스를 올리면 색이 변한다.</p>
+
+  <p id="secondP">마우스를 올리면 색이 변한다.</p>
+
+  <p id="thirdP">마우스를 올리면 색이 변한다.</p>
+
+  <p id="anyP"
+    onmouseover="over(event)"
+    onmouseout="out(event)"
+  >마우스를 올리면 색이 변한다.</p>
+  <script>
+    function over(e) {
+      e.target.style.color='red';
+    }
+
+    function out(e) {
+      e.target.style.color='black';
+    }
+  </script>
+</body>
+</html>

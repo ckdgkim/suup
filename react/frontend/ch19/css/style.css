@@ -1,0 +1,22 @@
+#container {
+  width:600px;
+  margin:0 auto;
+
+}
+
+#prod-pic {
+  float:left;
+}
+
+#small-pic {
+  
+}
+
+#desc {
+  width: 300px;
+  padding:20px;
+}
+.small {
+  width:100px;
+  height:100px;
+}

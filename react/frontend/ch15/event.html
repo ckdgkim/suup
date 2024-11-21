@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #btn {
+      background-color: blue;
+      color:white;
+    }
+  </style>
+</head>
+<body>
+  <h1>안녕하세요!</h1>
+  <hr>
+  <button id="btn" onclick="onClick()">클릭하세요</button>
+  <script>
+    var count = 0;
+    function onClick() {
+      console.log(`${count++} 번 버튼이 클릭되었습니다.`);
+    }
+  </script>
+</body>
+</html>

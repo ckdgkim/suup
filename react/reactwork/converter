@@ -1,0 +1,14 @@
+const restValue = () => {setNumbers(0);} 
+    return (
+        <div>
+            <h1> className="header">Converter</h1>
+            <div><label htmlFor="first">분</label>
+            <input id="first" type="number" placeholder="분" value={numbers} onChange={onChange}/>
+            </div>
+            <div>
+                <label htmlFor="second">시간</label>
+                <input id="second" type="number" placeholder="시간" value={Math.round(numbers/60)} disabled={true} />
+            </div>
+            <button onClick={resetValue}>Reset</button>
+        </div>
+    );

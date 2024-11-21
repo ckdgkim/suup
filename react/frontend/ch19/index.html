@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1 id="heading" style="color:red; background-color: white;">에디오피아 게뎁</h1>
+  <div id="container">
+    <img id="prod-pic" src="images/coffee-pink.jpg" alt="커피-핑크"
+         onmouseover="headerColorChange(); headerTextChange()"
+         onmouseout="headerColorUnchange(); headerTextUnChange()"
+         onclick="smallPicSizeChange()"
+         ondblclick="smallPicSizeUnChange()">
+    <p id="desc">
+      상품명 : 에디오피아 게뎁 <br>
+      판매가:9,000원
+    </p>
+    <button>장바구니 담기</button>
+    <a href="#">상세 설명 보기</a>
+  </div>
+
+  <div id="small-pic">
+    <img class="small" src="images/coffee-pink.jpg" alt="커피-핑크" onclick="changePic('coffee-pink.jpg')">
+    <img class="small" src="images/coffee-blue.jpg" alt="커피-블루" onclick="changePic('coffee-blue.jpg')">
+    <img class="small" src="images/coffee-gray.jpg" alt="커피-그레이" onclick="changePic('coffee-gray.jpg')">
+  </div>
+  <script>
+    function headerColorChange(){
+      //alert("함수가 호출되었습니다.");
+      // 1.헤더 객체를 가져오기
+      let header = document.getElementById("heading");
+      // 2.프로퍼티 동적 변경 
+      header.style.color="black";
+      header.style.backgroundColor="yellow";
+    }
+
+    function headerColorUnchange(){
+      // 1.헤더 객체를 가져오기
+      let header = document.getElementById("heading");
+      // 2.프로퍼티 동적 변경 
+      header.style.color="red";
+      header.style.backgroundColor="white";
+    }
+
+    function smallPicSizeChange() {
+      let pinkImg = document.getElementsByClassName("small")[0];
+      pinkImg.style.width="200px";
+      pinkImg.style.height="200px";
+    }
+
+    function smallPicSizeUnChange() {
+      let pinkImg = document.getElementsByClassName("small")[0];
+      pinkImg.style.width="100px";
+      pinkImg.style.height="100px";
+    }    
+
+    function headerTextChange(){
+      let header = document.querySelector("#heading");
+      header.innerText = "추천! 오늘의 커피";
+    }
+
+    function headerTextUnChange(){
+      let header = document.querySelector("#heading");
+      header.innerText = "에디오피아 게뎁";
+    }
+
+    function changePic(picName) {
+      let prodPic = document.querySelector("#prod-pic");
+      prodPic.src="images/"+picName;
+    }
+  </script>
+</body>
+</html>

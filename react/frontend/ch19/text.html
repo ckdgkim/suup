@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="text"></p> 
+  <button onclick="showText()">클릭하세요</button>
+  <script>
+    function showText() {
+      let p = document.querySelector("#text");
+      p.innerHTML = "<h1>p 태그입니다.</h1>";
+    }
+  </script>
+</body>
+</html>

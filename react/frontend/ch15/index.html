@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let name = prompt("이름을 입력하세요");
+    let nickname = 'hong';
+    if(name) {
+      // truthy 
+      //document.write(name + " 님 " + "("+ nickname + ") 환영합니다.");
+      document.write(`${name}님 (${nickname}) 반갑습니다.`);
+      console.log(`${name}님 (${nickname}) 반갑습니다.`)
+    }
+    else { // falsy = null, undefined
+      document.write("안녕하세요 !");
+      console.log("안녕하세요 !")
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  margin : 0px;
+  height:2000px;
+}
+
+#favWrapper {
+  background: url(../images/autumn_pick_bg.png) no-repeat fixed;
+  position:absolute;
+  width:2000px;
+  height:1000px;
+}
+
+
+
+.fav-text {
+  color:white;
+  animation : slideForward 3s ease-in-out;
+}
+
+.bg-text {
+  font-size: 9em;
+  position:absolute;
+  left:450px;
+  top:70px;
+}
+
+.md-text {
+  font-size: 6em;
+  position:absolute;
+  left:450px;
+  top:260px;
+}
+
+.sm-text {
+  font-size: 4em;
+  position:absolute;
+  left:450px;
+  top:430px;
+}
+
+#favImg {
+  position:absolute;
+  right:200px;
+  top:100px;
+}
+
+@keyframes slideForward {
+  from {left : -300px;
+        opacity: 0;}
+  to {left :450px;
+      opacity: 1;}
+}
+
+@keyframes slideBackward {
+  from {left :450px;
+  opacity: 1;}
+  to {left : -300px;
+  opacity: 0;}
+}

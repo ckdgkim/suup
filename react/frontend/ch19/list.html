@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function addNewList() {
+      let todo = document.querySelector("#todo");  
+      //console.log(todo.value)
+      
+      let newList = document.createElement("li");
+      newList.setAttribute("class", "list");
+      newList.innerText=todo.value;
+
+      let btn = document.createElement("button");
+      btn.innerText = "X";
+      btn.addEventListener("click", (e) => {
+        let list = e.target.parentElement;
+        list.parentElement.removeChild(list)
+      });
+      newList.appendChild(btn);
+
+      let parent = document.querySelector("#parent");
+      parent.appendChild(newList);
+    }
+
+    function removeLastList(){
+      let parent = document.querySelector("#parent");
+      if(parent && parent.lastChild) {
+        parent.removeChild(parent.lastChild);
+      }
+    }
+  </script>
+</head>
+<body onload="newFnc()">
+  <script>
+    function newFnc() {
+      let ul = document.querySelector("#parent");
+      ul.setAttribute("class", "new");
+    }
+   //newFnc();
+  </script>
+  <img src="" alt="" onload="checkImgSize()">
+  <p></p>
+  <input id="todo" type="text">
+  <button onclick="addNewList()">리스트 추가하기</button>
+  <button onclick="removeLastList()">마지막 리스트 삭제하기</button>
+  <ul id="parent">
+  </ul>
+
+  <script>
+
+  </script>
+</body>
+</html>

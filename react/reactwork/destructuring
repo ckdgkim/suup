@@ -1,0 +1,13 @@
+let student = {
+    name : "홍길동",
+    score : 90,
+    age : 20
+}
+
+let {age, name, score} = student;
+console.log("age" in student);
+student.school = "kosta";
+console.log(student.school);
+
+console.log(`${name} 의 점수는 ${score}점 입니다.`);
+console.log(age);

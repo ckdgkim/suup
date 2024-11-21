@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /* 입력받은 count = 3 이라면 
+    2 X 1 = 2
+    2 X 2 = 4
+    2 X 3 = 6
+    */
+    let count = prompt("구구단을 출력할 횟수를 입력하세요");
+    document.write("<ul>");
+    for(let i = 0; i < count; i++) {
+      document.write(`<li>2 X ${i+1} = ${2*(i+1)} </li>`);
+    }
+    document.write("</ul>");
+  </script>  
+</body>
+</html>

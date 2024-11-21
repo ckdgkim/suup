@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .div {
+      border: 2px solid red;
+      width: 500px;
+    }
+    .div>div:nth-child(even) {
+      background-color: chartreuse;
+    }
+    .div>div:nth-child(odd) {
+      background-color: orange;
+    }
+
+    .div>div {
+      width : 100px;
+      height : 50px;
+      border : 1px solid black;
+      text-align: center;
+      display: inline-block;
+    }
+
+    #opt1 {
+      display:flex;
+      flex-direction: row;
+    }
+
+    #opt2 {
+      display:flex;
+      flex-direction: row-reverse;
+    }
+
+    #opt3 {
+      display:flex;
+      flex-direction: column;
+    }
+
+    #opt4 {
+      display:flex;
+      flex-direction: column-reverse;
+    }
+  </style>
+</head>
+<body>
+  <div id="opt1" class="div">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+  </div>
+  <div id="opt2" class="div">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div>
+<div id="opt3" class="div">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+<div id="opt4" class="div">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+</body>
+</html>

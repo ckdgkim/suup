@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    console.log(result);
+
+    let res = addNumber();
+    console.log(addNumber());
+    console.log(result);
+    console.log(addNumber);
+
+    let fn = addNumber;
+    console.log(fn);
+    console.log(fn());
+
+    function addNumber() {
+      let sum = 10 + 10;
+      result = sum;
+    }
+
+    var result;
+
+    function multiple(num1, num2=10,num3=10) {
+      return num1 + num2 + num3;
+    }
+
+    console.log(multiple(10,10,10));
+    console.log(multiple(10,10));
+    console.log(multiple(10));
+  </script>
+</body>
+</html>
